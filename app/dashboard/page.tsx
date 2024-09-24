@@ -1,8 +1,18 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
+import SearchSection from './_components/SearchSection'
+import SearchTemplateSection from './_components/SearchTemplateSection'
 
 function Dashboard() {
+  const [onSearchInput, setOnSearchInput] = useState<string>()
   return (
-    <div>Dashboard</div>
+    <div>
+      {/* Search section */}
+        <SearchSection searchInput={(value:string)=>setOnSearchInput(value)}/>
+
+      {/* Search template section */}
+      <SearchTemplateSection onSearchInput={onSearchInput}/>
+    </div>
   )
 }
 

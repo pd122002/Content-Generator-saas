@@ -11,8 +11,8 @@ function layout({
     <div>
       <div className='md:w-64 hidden md:block fixed'><SideNav /></div>
 
-      <div className='md:ml-64'>
-        <div><Header /></div>
+      <div className='md:ml-64 bg-slate-100 h-screen'>
+        <div className='bg-white'><Header /></div>
         {children}
 
       </div>
