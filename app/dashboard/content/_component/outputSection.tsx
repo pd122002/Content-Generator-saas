@@ -18,7 +18,7 @@ function OutputSection({aiOutput}:PROPS) {
         <div className='shadow-md border rounded-lg bg-white'>
             <div className='flex justify-between items-center p-5'>
                 <h2 className='font-bold'>Your Result</h2>
-                <Button className='text-sm'><Copy/>Copy</Button>
+                <Button className='text-sm'><Copy/> Copy</Button>
             </div>
             <Editor
             ref={editorRef}
